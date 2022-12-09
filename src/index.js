@@ -1,13 +1,24 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
 import './index.css';
-import App from './App';
 import reportWebVitals from './reportWebVitals';
+import { BrowserRouter, Route, Routes } from "react-router-dom";
+import Navbar from './Navbar';
+import { ChakraProvider } from '@chakra-ui/react'
+import Exercice1 from './exercices/Exercice1';
+
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
-    <App />
+    <BrowserRouter>
+      <ChakraProvider>
+        <Navbar />
+      <Routes>
+      <Route path="/ex1" element={<Exercice1/>}/>
+      </Routes>
+      </ChakraProvider>
+    </BrowserRouter>
   </React.StrictMode>
 );
 
