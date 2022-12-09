@@ -9,6 +9,7 @@ import Exercice1 from './exercices/Exercice1';
 import Exercice2 from './exercices/Exercice2';
 import Exercice3 from './exercices/Exercice3';
 import Exercice4 from './exercices/Exercice4';
+import Exercice5 from './exercices/Exercice5';
 
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
@@ -22,6 +23,7 @@ root.render(
       <Route path="/ex2" element={<Exercice2/>}/>
       <Route path="/ex3" element={<Exercice3/>}/>
       <Route path="/ex4" element={<Exercice4/>}/>
+      <Route path="/ex5" element={<Exercice5/>}/>
       </Routes>
       </ChakraProvider>
     </BrowserRouter>
