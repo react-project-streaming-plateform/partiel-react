@@ -1,9 +1,13 @@
-import React from 'react'
+import React from "react";
 
-function Personnage() {
+function Personnage({name, lastname}) {
   return (
-    <div>Personnage</div>
-  )
+    <div>
+      <p>{name}</p>
+      <p>{lastname}</p>
+      <br />
+    </div>
+  );
 }
 
-export default Personnage
+export default Personnage;
